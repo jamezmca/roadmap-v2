@@ -56,7 +56,7 @@
 <div
     class="flex flex-col justify-center items-center flex-1 w-[800px] max-w-full mx-auto"
 >
-    <div class="flex flex-col gap-2 py-10 sm:py-14 md:py-16">
+    <div class="flex flex-col gap-2 py-10 sm:py-14 md:py-16 -mt-4 sm:-mt-0">
         <h1 class="text-3xl sm:text-4xl md:text-5xl font-medium">
             Welcome <span class={"poppins capitalize text-blue-400"}
                 >{$store.name}</span
