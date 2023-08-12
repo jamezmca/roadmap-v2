@@ -4,7 +4,7 @@ import { browser } from '$app/environment';
 // Going to serve the small images with the project and the big ones over the internet
 
 const defaultObj = {
-    darkTheme: false,
+    darkTheme: true,
     name: '',
     roadmap: {
         'HTML | CSS | GIT': {
