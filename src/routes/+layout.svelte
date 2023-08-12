@@ -1,0 +1,48 @@
+<script>
+    import "../app.css";
+    import store from "../store";
+    import Footer from "../components/Footer.svelte";
+    import Header from "../components/Header.svelte";
+    let y;
+
+    function goTop() {
+        document.body.scrollIntoView();
+    }
+
+    let styles;
+
+    $: {
+        let darkTheme = $store.darkTheme;
+        styles = {
+            arrowColors: darkTheme
+                ? " bg-slate-950 text-blue-400"
+                : " bg-slate-200 text-slate-600",
+        };
+    }
+</script>
+
+<div
+    class={"bodyContainer min-h-screen flex flex-col relative bg-gradient-to-r duration-200 text-sm sm:text-base " +
+        ($store.darkTheme
+            ? " from-slate-950 to-slate-800 text-white "
+            : " from-blue-50 to-white text-slate-700")}
+>
+    <Header />
+    <slot />
+    <Footer />
+    <div
+        class={"w-full max-w-[1000px] fixed bottom-4 pr-4 z-50 flex items-center justify-end right-1/2 translate-x-1/2 duration-200 " +
+            (y === 0
+                ? " pointer-events-none opacity-0"
+                : " opacity-100 cursor-pointer")}
+    >
+        <button on:click={goTop}
+            class={"grid place-items-center w-8 sm:w-10 aspect-square rounded-full " +
+                styles.arrowColors}
+        >
+            <i class="fa-solid fa-arrow-up" />
+        </button>
+    </div>
+</div>
+
+<svelte:window bind:scrollY={y} />
