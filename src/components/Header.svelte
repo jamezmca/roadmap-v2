@@ -2,7 +2,6 @@
     import store from "../store";
 
     function toggleTheme() {
-        console.log("here", $store.darkTheme);
         $store.darkTheme = !$store.darkTheme;
     }
 

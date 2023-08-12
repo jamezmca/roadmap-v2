@@ -22,7 +22,6 @@
     let selectedEntry = null;
 
     function toggleSelectedEntry(index) {
-        console.log(index, selectedEntry);
         if (selectedEntry === index) {
             selectedEntry = null;
             return;
