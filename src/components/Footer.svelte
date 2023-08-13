@@ -105,22 +105,24 @@
 <footer
     class="py-10 sm:py-14 md:py-20 flex flex-col gap-8 sm:gap-10 md:gap-14 items-center justify-center p-4 text-sm"
 >
-    <div class="flex flex-col gap-4">
-        <h4 class="text-center">Enjoying the guide? Leave a review!</h4>
-        <div class="flex items-center justify-center">
-            {#each [1, 2, 3, 4, 5] as ratingNum}
-                <button
-                    on:click={handleRating}
-                    on:mouseenter={() => (rating = ratingNum)}
-                    on:mouseleave={() => (rating = null)}
-                    class={"grid place-items-center text-3xl px-2 " +
-                        styles.starColor(ratingNum)}
-                >
-                    <i class="fa-solid fa-star" />
-                </button>
-            {/each}
+    {#if $store.name}
+        <div class="flex flex-col gap-4">
+            <h4 class="text-center">Enjoying the guide? Leave a review!</h4>
+            <div class="flex items-center justify-center">
+                {#each [1, 2, 3, 4, 5] as ratingNum}
+                    <button
+                        on:click={handleRating}
+                        on:mouseenter={() => (rating = ratingNum)}
+                        on:mouseleave={() => (rating = null)}
+                        class={"grid place-items-center text-3xl px-2 " +
+                            styles.starColor(ratingNum)}
+                    >
+                        <i class="fa-solid fa-star" />
+                    </button>
+                {/each}
+            </div>
         </div>
-    </div>
+    {/if}
 
     <div class="flex flex-col gap-4">
         <h4 class="text-center">
