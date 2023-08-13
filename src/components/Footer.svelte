@@ -1,10 +1,19 @@
 <script>
+    import { onMount } from "svelte";
     import store from "../store";
     let email = "";
     let emailStatus = "";
     let error = false;
+    let rating = null;
+    let chosenRating = null;
 
     let styles;
+
+    onMount(() => {
+        if (localStorage.getItem("roadmapRating")) {
+            chosenRating = parseInt(localStorage.getItem("roadmapRating"));
+        }
+    });
 
     $: {
         let darkTheme = $store.darkTheme;
@@ -12,6 +21,12 @@
             inputColor: darkTheme
                 ? " bg-transparent border-blue-950 focus-within:border-blue-900 hover:border-blue-900"
                 : " bg-transparent border-blue-100 focus-within:border-blue-300 hover:border-blue-300",
+            starColor: (ratingNum) =>
+                ratingNum > (chosenRating || rating)
+                    ? darkTheme
+                        ? " text-white"
+                        : " text-slate-600"
+                    : " text-amber-300",
         };
     }
 
@@ -52,11 +67,61 @@
             handleSubscribe();
         }
     };
+
+    async function handleRating() {
+        if (!rating || chosenRating) {
+            return;
+        }
+
+        console.log(rating);
+        chosenRating = rating;
+
+        try {
+            const res = await fetch(
+                // "http://localhost:5353/api/rate",
+                "https://mailing-list-3hzb.onrender.com/api/rate",
+                {
+                    method: "POST",
+                    headers: {
+                        "Content-type": "application/json",
+                    },
+                    body: JSON.stringify({
+                        password: "80085",
+                        rating: rating,
+                        platform: "roadmap",
+                    }),
+                }
+            );
+            localStorage.setItem("roadmapRating", chosenRating);
+            if (res.status === "201") {
+                console.log("Sent");
+            }
+        } catch (err) {
+            console.log("Failed to leave review");
+        }
+    }
 </script>
 
 <footer
-    class="py-10 sm:py-14 md:py-20 flex flex-col gap-4 sm:gap-6 md:gap-8 items-center justify-center p-4 text-sm"
+    class="py-10 sm:py-14 md:py-20 flex flex-col gap-8 sm:gap-10 md:gap-14 items-center justify-center p-4 text-sm"
 >
+    <div class="flex flex-col gap-4">
+        <h4 class="text-center">Enjoying the guide? Leave a review!</h4>
+        <div class="flex items-center justify-center">
+            {#each [1, 2, 3, 4, 5] as ratingNum}
+                <button
+                    on:click={handleRating}
+                    on:mouseenter={() => (rating = ratingNum)}
+                    on:mouseleave={() => (rating = null)}
+                    class={"grid place-items-center text-3xl px-2 " +
+                        styles.starColor(ratingNum)}
+                >
+                    <i class="fa-solid fa-star" />
+                </button>
+            {/each}
+        </div>
+    </div>
+
     <div class="flex flex-col gap-4">
         <h4 class="text-center">
             Interested in a <span class="text-blue-400">Web Dev</span> course - join

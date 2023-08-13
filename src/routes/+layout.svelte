@@ -3,6 +3,7 @@
     import store from "../store";
     import Footer from "../components/Footer.svelte";
     import Header from "../components/Header.svelte";
+    import { onMount } from "svelte";
     let y;
 
     function goTop() {
@@ -19,6 +20,32 @@
                 : " bg-slate-200 text-slate-600",
         };
     }
+
+    onMount(() => {
+        try {
+            if (localStorage.getItem("codemap")) {
+                const previousProgress = JSON.parse(
+                    localStorage.getItem("codemap")
+                ).progress;
+                for (let chapter in previousProgress) {
+                    for (let milestone of previousProgress[chapter]) {
+                        if (
+                            chapter in $store.roadmap &&
+                            milestone in
+                                ($store.roadmap?.[chapter]?.milestones || {})
+                        ) {
+                            $store.roadmap[chapter].milestones[
+                                milestone
+                            ].complete = true;
+                        }
+                    }
+                }
+                localStorage.removeItem("codemap");
+            }
+        } catch (err) {
+            console.log("Failed to read from old roadmap");
+        }
+    });
 </script>
 
 <div
@@ -36,7 +63,8 @@
                 ? " pointer-events-none opacity-0"
                 : " opacity-100 cursor-pointer")}
     >
-        <button on:click={goTop}
+        <button
+            on:click={goTop}
             class={"grid place-items-center w-8 sm:w-10 aspect-square rounded-full " +
                 styles.arrowColors}
         >

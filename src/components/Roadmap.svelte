@@ -136,6 +136,7 @@
                                         src={$store.roadmap[roadmapItem]
                                             .milestones[milestone].iconUrl}
                                         alt="iconImg"
+                                        loading="lazy"
                                         class="w-full object-cover h-full img opacity-0 duration-200"
                                     />
                                 </div>
