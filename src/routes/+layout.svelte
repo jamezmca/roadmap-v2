@@ -1,6 +1,6 @@
 <script>
     import "../app.css";
-    import store from "../store";
+    import store, { defaultObj } from "../store";
     import Footer from "../components/Footer.svelte";
     import Header from "../components/Header.svelte";
     import { onMount } from "svelte";
@@ -44,6 +44,42 @@
             }
         } catch (err) {
             console.log("Failed to read from old roadmap");
+        }
+
+        try {
+            if (defaultObj["version"] !== $store?.version) {
+                console.log("Updating to version ", defaultObj["version"]);
+                let newState = {
+                    ...defaultObj,
+                    darkTheme: $store.darkTheme,
+                    name: $store.name,
+                    version: defaultObj["version"],
+                };
+
+                for (let chapter in $store.roadmap) {
+                    if (!(chapter in newState.roadmap)) {
+                        continue;
+                    }
+                    for (let milestone in $store.roadmap[chapter].milestones) {
+                        if (
+                            !(milestone in newState.roadmap[chapter].milestones)
+                        ) {
+                            continue;
+                        }
+
+                        newState.roadmap[chapter].milestones[
+                            milestone
+                        ].complete =
+                            $store.roadmap[chapter].milestones[
+                                milestone
+                            ].complete;
+                    }
+                }
+                $store = { ...newState };
+                console.log("Finished update");
+            }
+        } catch (err) {
+            console.log("Failed to complete updates");
         }
     });
 </script>

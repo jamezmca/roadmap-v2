@@ -3,9 +3,10 @@ import { browser } from '$app/environment';
 
 // Going to serve the small images with the project and the big ones over the internet
 
-const defaultObj = {
+export const defaultObj = {
     darkTheme: true,
     name: '',
+    version: '1.0.1',
     roadmap: {
         'HTML | CSS | GIT': {
             description: 'HTML, CSS & GIT are at the foundation of most web development projects - so it\'s the perfect place to start.',
@@ -22,7 +23,7 @@ const defaultObj = {
                 },
                 'GIT Crash Course': {
                     url: 'https://www.youtube.com/watch?v=WqWZt5gi-jw&t=6s',
-                    imgUrl: 'https://i.imgur.com/n4vTADV.jpg',
+                    imgUrl: 'https://i.imgur.com/ieJEuKi.jpg',
                     imgUrlSm: 'git_crash_course.jpg',
                     iconUrl: 'https://git-scm.com/images/logos/downloads/Git-Icon-Black.png',
                     iconUrlSm: 'git_logo.jpg',
@@ -67,7 +68,7 @@ const defaultObj = {
                 },
                 'JavaScript HTML & CSS Project': {
                     url: 'https://www.youtube.com/watch?v=bnTdSbCDsmA',
-                    imgUrl: 'https://i.imgur.com/LkqGYAd.jpg',
+                    imgUrl: 'https://i.imgur.com/50TLL7X.jpg',
                     imgUrlSm: 'javascript_project_1.jpg',
                     iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png',
                     iconUrlSm: 'javascript_logo.jpg',
@@ -123,7 +124,7 @@ const defaultObj = {
                 },
                 'SvelteKit Crash Course': {
                     url: 'https://youtu.be/TIbL0VOE900',
-                    imgUrl: 'https://i.imgur.com/CEXHkOl.jpg',
+                    imgUrl: 'https://i.imgur.com/ZTabOHs.jpg',
                     imgUrlSm: 'sveltekit crash course.jpg',
                     iconUrl: 'https://a.storyblok.com/f/88751/1702x2049/619c584101/svelte_logo.png',
                     iconUrlSm: 'sveltekit_logo.jpg',
