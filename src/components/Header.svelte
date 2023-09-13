@@ -41,10 +41,10 @@
     }
 </script>
 
-<header class=" flex items-center justify-between gap-4 p-4 sm:p-5 md:p-6">
+<header class=" flex items-center justify-between  p-4 gap-2">
     <a href="/" class="flex flex-col text-center">
         <div class="flex items-center gap-2">
-            <img class="w-10 sm:w-12 md:w-14" src="/pc.png" alt="logo_img" />
+            <img class="w-10 sm:w-12 md:w-14 hidden sm:inline" src="/pc.png" alt="logo_img" />
             <h1 class="font-medium">
                 Webdev <span class={"poppins " + styles.accentColor}
                     >Roadmap</span
@@ -53,7 +53,7 @@
         </div>
         <!-- <h3 class={"text-xs sm:text-sm italic" + fadedColor}>Guide by Smoljames</h3> -->
     </a>
-    <div class="flex items-center gap-4 text-base sm:text-lg md:text-xl">
+    <div class="flex items-center gap-2 sm:gap-4 text-base sm:text-lg md:text-xl">
         <button
             on:click={toggleTheme}
             class={"grid place-items-center w-8 sm:w-10 aspect-square rounded-md  duration-200 hover:opacity-60"}
@@ -111,5 +111,9 @@
                 </div>
             </div>
         </div>
+        <a href="/blog" class={"  border duration-200 border-solid hover:opacity-60 rounded px-3 sm:px-4 py-1.5 md:px-5 text-sm sm:text-base poppins flex items-center gap-2 "}>
+            <!-- <i class="fa-solid fa-scroll hidden sm:inline"></i> -->
+            <h4>Blog</h4>
+        </a>
     </div>
 </header>

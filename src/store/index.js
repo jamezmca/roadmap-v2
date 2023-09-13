@@ -6,7 +6,7 @@ import { browser } from '$app/environment';
 export const defaultObj = {
     darkTheme: true,
     name: '',
-    version: '1.0.1',
+    version: '1.0.2',
     roadmap: {
         'HTML | CSS | GIT': {
             description: 'HTML, CSS & GIT are at the foundation of most web development projects - so it\'s the perfect place to start.',
@@ -102,15 +102,15 @@ export const defaultObj = {
                     primary: true,
                     description: 'Learn React.js by putting together a Lord Of The Rings information site that fetches data from an API and has some funky dynamic componentry to render it out.'
                 },
-                'React Beginner Project': {
-                    url: 'https://youtu.be/lp4lWkPCZDg',
-                    imgUrl: 'https://i.imgur.com/kpdA8Ea.jpg',
-                    imgUrlSm: 'react_project.jpg',
-                    iconUrl: 'https://cdn.freebiesupply.com/logos/large/2x/react-1-logo-png-transparent.png',
-                    iconUrlSm: 'react_logo.jpg',
+                'SvelteKit Web Portfolio': {
+                    url: 'https://www.youtube.com/watch?v=ylCUH6LkW80',
+                    imgUrl: 'https://i.imgur.com/TPeC8CY.jpg',
+                    imgUrlSm: 'svelteWebPortfolioSm.jpg',
+                    iconUrl: 'https://a.storyblok.com/f/88751/1702x2049/619c584101/svelte_logo.png',
+                    iconUrlSm: 'sveltekit_logo.jpg',
                     complete: false,
-                    primary: false,
-                    description: 'In this video, we build a transcription and translation web application that runs 2 machine learning models in the users browser for free with React.js, Huggingface.js & TailwindCSS.'
+                    primary: true,
+                    description: 'In this video we build a beautiful and responsive web portfolio with SvelteKit & TailwindCSS to showcase your coding prowess. '
                 },
                 'NEXT.JS Crash Course': {
                     url: 'https://youtu.be/oLPgc5Fp2Ts',
@@ -121,6 +121,16 @@ export const defaultObj = {
                     complete: false,
                     primary: true,
                     description: 'In this Next.js E-commerce Store tutorial, we cover using technology like Zustand for global state management in our App, the Stripe API for all our product and transaction handling, and TailwindCSS to design and stylize our web app.'
+                },
+                'React Beginner Project': {
+                    url: 'https://youtu.be/lp4lWkPCZDg',
+                    imgUrl: 'https://i.imgur.com/kpdA8Ea.jpg',
+                    imgUrlSm: 'react_project.jpg',
+                    iconUrl: 'https://cdn.freebiesupply.com/logos/large/2x/react-1-logo-png-transparent.png',
+                    iconUrlSm: 'react_logo.jpg',
+                    complete: false,
+                    primary: false,
+                    description: 'In this video, we build a transcription and translation web application that runs 2 machine learning models in the users browser for free with React.js, Huggingface.js & TailwindCSS.'
                 },
                 'SvelteKit Crash Course': {
                     url: 'https://youtu.be/TIbL0VOE900',
@@ -166,6 +176,16 @@ export const defaultObj = {
                     complete: false,
                     primary: true,
                     description: 'In this video, we look at all the fundamentals needed to start developing your own Node.js applications today!'
+                },
+                'Monetise an API with Stripe Node.js & Firebase': {
+                    url: 'https://youtu.be/Wy9aOFcpr0w',
+                    imgUrl: 'https://i.imgur.com/H4kP0tl.jpg',
+                    imgUrlSm: 'moneyApi.jpg',
+                    iconUrl: 'https://pluralsight2.imgix.net/paths/images/nodejs-45adbe594d.png',
+                    iconUrlSm: 'node_logo.jpg',
+                    complete: false,
+                    primary: true,
+                    description: 'APIs are a brilliant way to make money in tech & in this video we learn how we can build & sell a profitable API with Node.js & Express.js, create a documentation webpage that allows people to gain access your your API, & manage peoples transactions & subscriptions with Stripe and Firebase.'
                 },
                 'Dockerized Node.js & PostgreSQL Tutorial': {
                     url: 'https://youtu.be/sDPw2Yp4JwE',

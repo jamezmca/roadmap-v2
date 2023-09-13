@@ -41,7 +41,7 @@
     >
         <p>Current Objective</p>
         <h4
-            class="text-blue-400 font-semibold text-2xl sm:text-3xl md:text-4xl"
+            class="text-blue-400 text-center font-semibold text-2xl sm:text-3xl md:text-4xl"
         >
             {roadmapItem}
         </h4>

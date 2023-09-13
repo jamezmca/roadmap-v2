@@ -16,6 +16,8 @@
                 : " border-blue-300",
             inputColor: darkTheme ? " bg-slate-950" : " bg-white",
             subTextColor: darkTheme ? " text-slate-300" : " text-slate-600",
+            blueText: darkTheme ? " text-blue-400" : " text-blue-500",
+            amberText: darkTheme ? " text-amber-400" : " text-amber-500",
         };
     }
 
@@ -54,15 +56,26 @@
 </script>
 
 <div
-    class="flex flex-col justify-center items-center flex-1 w-[800px] max-w-full mx-auto"
+    class={" flex-col justify-center items-center flex-1 w-[800px] max-w-full mx-auto " +
+        ($store.name ? " flex" : " hidden")}
 >
     <div class="flex flex-col gap-2 py-10 sm:py-14 md:py-16 -mt-4 sm:-mt-0">
-        <h1 class="text-3xl sm:text-4xl md:text-5xl font-medium">
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-semibold">
             Welcome <span class={"poppins capitalize text-blue-400"}
                 >{$store.name}</span
             >
         </h1>
-        <h4 class="text-center">Continue your coding journey!</h4>
+        <!-- <h4 class="text-center">Continue your coding journey!</h4> -->
+        <h4 class=" text-center">
+            <span class={" " + styles.amberText}>Learn</span> to code ·
+            <span class={" " + styles.blueText}>Land</span>
+            a job
+            <!-- <span class=" ">Learn</span> to
+            <span class={" " + styles.blueText}>code</span> ·
+            <span class=" ">Land</span>
+            a
+            <span class={" " + styles.amberText}>job</span>! -->
+        </h4>
     </div>
     <div class="flex flex-col gap-4 sm:gap-6 md:gap-8 w-full">
         {#each Object.keys($store.roadmap) as roadmapItem, itemIndex}

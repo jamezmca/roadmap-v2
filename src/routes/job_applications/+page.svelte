@@ -1,6 +1,7 @@
 <script>
     import JobAppSection from "../../components/JobAppSection.svelte";
     import CheckListItem from "../../components/CheckListItem.svelte";
+    import BackHome from "../../components/BackHome.svelte";
 
     const navItems = [
         "Preparation",
@@ -561,8 +562,5 @@
             you’ll never look back.
         </p>
     </JobAppSection>
-    <a href="/" class="my-10 flex items-center gap-2 mx-auto">
-        <h4>Back <span class="text-blue-400">home</span></h4>
-        <i class="fa-solid fa-house" />
-    </a>
+   <BackHome/>
 </main>
