@@ -53,7 +53,7 @@
 
         <!-- <p class={"italic " + styles.fadedColor}>- by Smoljames</p> -->
         <div class="flex gap-1 text-xs sm:text-sm">
-            <h4>4.5</h4>
+            <h4>4.55</h4>
             <div class="flex items-center gap-0.5 text-xs">
                 {#each [1, 2, 3, 4, 5] as ratingNum}
                     <div class="grid place-items-center relative">
@@ -68,7 +68,7 @@
                     </div>
                 {/each}
             </div>
-            <h4>(100+)</h4>
+            <h4>(200+)</h4>
         </div>
         <div class="flex p-0.5 w-full relative">
             <div
