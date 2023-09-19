@@ -53,13 +53,13 @@
 
         <!-- <p class={"italic " + styles.fadedColor}>- by Smoljames</p> -->
         <div class="flex gap-1 text-xs sm:text-sm">
-            <h4>4.55</h4>
+            <h4>4.6</h4>
             <div class="flex items-center gap-0.5 text-xs">
                 {#each [1, 2, 3, 4, 5] as ratingNum}
                     <div class="grid place-items-center relative">
                         {#if ratingNum == 5}
                             <div
-                                class="flex justify-end w-[45%] absolute top-1/2 -translate-y-1/2 right-0 overflow-hidden"
+                                class="flex justify-end w-[40%] absolute top-1/2 -translate-y-1/2 right-0 overflow-hidden"
                             >
                                 <i class="fa-solid fa-star text-white" />
                             </div>
