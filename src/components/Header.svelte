@@ -42,21 +42,24 @@
 </script>
 
 <section
-    class="border-b border-solid border-slate-400 text-xs sm:text-sm  p-4 flex items-center justify-center text-center"
+    class="border-b border-solid border-slate-400 text-xs sm:text-sm p-4 flex items-center justify-center text-center"
 >
     <a
         class=""
         href="/Webdev Roadmap Certificate - track progress & sign on completion.jpg"
         download
     >
-        <h4>
-            Download the <span class="text-blue-400">Webdev Roadmap</span> mobile
+        <h4 class="">
+            Download the <span class="text-blue-400">Roadmap</span> mobile
             wallpaper &rarr;
         </h4>
+        <!-- <h4 class="sm:hidden">
+            Download the <span class="text-blue-400">Webdev Roadmap</span><br />
+            mobile wallpaper &rarr;
+        </h4> -->
     </a>
 </section>
 <header class=" flex items-center justify-between p-4 gap-2 relative">
-   
     <a href="/" class="flex flex-col text-center">
         <div class="flex items-center gap-2">
             <img
@@ -65,13 +68,11 @@
                 alt="logo_img"
             />
             <div class="flex flex-col gap-1">
-
-                <h1 class="font-medium ">
+                <h1 class="font-medium">
                     Webdev <span class={"poppins " + styles.accentColor}
-                    >Roadmap</span
+                        >Roadmap</span
                     >
                 </h1>
-              
             </div>
         </div>
         <!-- <h3 class={"text-xs sm:text-sm italic" + fadedColor}>Guide by Smoljames</h3> -->
@@ -104,7 +105,7 @@
             target="_blank"
             class="duration-200 hover:opacity-60"
         >
-        <i class="fa-solid fa-store"></i>
+            <i class="fa-solid fa-store" />
         </a>
         <!-- <div class="flex items-stretch gap-1 relative">
             <h6 class="text-xs z-1 ">Prog<br/>ress</h6>
@@ -116,7 +117,6 @@
             </div>
         </div> -->
         <div class="flex items-centerrelative">
-     
             <div class={"relative h-6 sm:h-7 w-2 " + styles.progressBarColor}>
                 <div
                     class="w-full absolute bottom-0 left-0 bg-emerald-400"
