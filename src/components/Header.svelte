@@ -1,5 +1,6 @@
 <script>
     import store from "../store";
+    import HeaderIconWrapper from "./HeaderIconWrapper.svelte";
 
     function toggleTheme() {
         $store.darkTheme = !$store.darkTheme;
@@ -80,36 +81,42 @@
         </div>
         <!-- <h3 class={"text-xs sm:text-sm italic" + fadedColor}>Guide by Smoljames</h3> -->
     </a>
-    <div
-        class="flex items-center gap-3 sm:gap-5 md:gap-6 text-base sm:text-lg md:text-xl"
+    <nav
+        class="flex items-center gap-4 sm:gap-5 md:gap-6 text-base sm:text-lg md:text-xl"
     >
-        <button
-            on:click={toggleTheme}
-            class={"grid place-items-center  duration-200 hover:opacity-60"}
-        >
-            {#if $store.darkTheme}
-                <i class={"fa-regular fa-sun "} />
-            {:else}
-                <i class={"fa-regular fa-moon "} />
-            {/if}
-        </button>
+        <HeaderIconWrapper title={"Theme"}>
+            <button
+                on:click={toggleTheme}
+                class={"grid place-items-center  duration-200 hover:opacity-60"}
+            >
+                {#if $store.darkTheme}
+                    <i class={"fa-regular fa-sun "} />
+                {:else}
+                    <i class={"fa-regular fa-moon "} />
+                {/if}
+            </button>
+        </HeaderIconWrapper>
         <!-- <a href="https://www.youtube.com/smoljames" target="_blank" class="duration-200 hover:opacity-60">
             <i class="fa-brands fa-youtube"></i>
         </a> -->
-        <a
-            href="https://discord.gg/BYr6gujs4k"
-            target="_blank"
-            class="duration-200 hover:opacity-60"
-        >
-            <i class="fa-brands fa-discord" />
-        </a>
-        <a
-            href="https://store.smoljames.com"
-            target="_blank"
-            class="duration-200 hover:opacity-60"
-        >
-            <i class="fa-solid fa-store" />
-        </a>
+        <HeaderIconWrapper title={"Discord"}>
+            <a
+                href="https://discord.gg/BYr6gujs4k"
+                target="_blank"
+                class="duration-200 hover:opacity-60"
+            >
+                <i class="fa-brands fa-discord" />
+            </a>
+        </HeaderIconWrapper>
+        <HeaderIconWrapper title={"Store"}>
+            <a
+                href="https://store.smoljames.com"
+                target="_blank"
+                class="duration-200 hover:opacity-60"
+            >
+                <i class="fa-solid fa-store" />
+            </a>
+        </HeaderIconWrapper>
         <!-- <div class="flex items-stretch gap-1 relative">
             <h6 class="text-xs z-1 ">Prog<br/>ress</h6>
             <div class={"relative  w-2  my-0.5 " + styles.progressBarColor}>
@@ -178,5 +185,5 @@
             <i class="fa-solid fa-scroll hidden sm:inline"></i>
             <h4>Blog</h4>
         </a> -->
-    </div>
+    </nav>
 </header>
