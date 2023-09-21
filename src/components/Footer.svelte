@@ -207,7 +207,7 @@
         </a>
         <p class="">|</p>
         <a
-            href="https://www.smoljames.com"
+            href="https://www.store.smoljames.com"
             class="flex items-center gap-2"
             target="_blank"
         >
