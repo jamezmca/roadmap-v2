@@ -50,11 +50,11 @@
         download
     >
         <h4 class="">
-            Download the <span class="text-blue-400">Roadmap</span> mobile
-            wallpaper &rarr;
+            Download the <span class="text-blue-400">Roadmap</span> mobile wallpaper
+            &rarr;
         </h4>
         <!-- <h4 class="sm:hidden">
-            Download the <span class="text-blue-400">Webdev Roadmap</span><br />
+            Download the <span class="text-blue-400">Web Developer Roadmap</span><br />
             mobile wallpaper &rarr;
         </h4> -->
     </a>
@@ -67,13 +67,16 @@
                 src="/pc.png"
                 alt="logo_img"
             />
-            <div class="flex flex-col gap-1">
-                <h1 class="font-medium">
-                    Webdev <span class={"poppins " + styles.accentColor}
-                        >Roadmap</span
-                    >
-                </h1>
-            </div>
+            <h1 class="font-medium hidden sm:inline">
+                Web Developer <span class={"poppins " + styles.accentColor}
+                    >Roadmap</span
+                >
+            </h1>
+            <h1 class="font-medium sm:hidden text-left">
+                Web Developer <br /><span
+                    class={"poppins " + styles.accentColor}>Roadmap</span
+                >
+            </h1>
         </div>
         <!-- <h3 class={"text-xs sm:text-sm italic" + fadedColor}>Guide by Smoljames</h3> -->
     </a>

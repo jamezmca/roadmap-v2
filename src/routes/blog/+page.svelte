@@ -18,7 +18,7 @@ import store from "../../store";
 
     let blogs = [
         {
-            name: "How I learned to Code in 6 Months & Got a Job Offer (self-taught)",
+            name: "How I learned to Code in 6 Months & Got a Full Stack Developer Job Offer (self-taught)",
             description:
                 "It took a lot of courage to quit my job and pursue a career as a developer, but I knew it was what I wanted and was willing to put in the hard work to make it happen. So this is the story of how I learned to code (self-taught) and ultimately landed my dream remote developer job!",
             href: "/blog/learn to code",
@@ -46,7 +46,7 @@ import store from "../../store";
                 </p>
                 <div class="flex flex-col gap-4 sm:gap-6 md:gap-8">
                     <h3
-                        class="text-2xl sm:text-3xl md:text-5xl group-hover:text-blue-400 duration-200"
+                        class="text-2xl sm:text-3xl md:text-4xl group-hover:text-blue-400 duration-200"
                     >
                         {blog.name}
                     </h3>
@@ -59,5 +59,5 @@ import store from "../../store";
 </section>
 
 <svelte:head>
-    <title>Webdev Roadmap · Blog</title>
+    <title>Web Developer Roadmap · Blog</title>
 </svelte:head>

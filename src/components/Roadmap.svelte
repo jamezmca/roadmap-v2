@@ -81,7 +81,7 @@
         {#each Object.keys($store.roadmap) as roadmapItem, itemIndex}
             <button
                 on:click={() =>
-                    (window.location.href = "/chapter/" + roadmapItem)}
+                    (window.location.href = "/chapter/" + roadmapItem.toLowerCase())}
                 class={"relative group before:absolute before:top-0 before:left-0  before:border-t-[1.5px] before:border-l-[1.5px]  text-center before:duration-200 after:absolute after:bottom-0 after:right-0  after:border-b-[1.5px] after:border-r-[1.5px]  after:duration-200 flex flex-col  " +
                     styles.borderColor +
                     " " +

@@ -39,7 +39,7 @@
             (!$store.name ? " flex" : " hidden")}
     >
         <h1 class="text-3xl sm:text-4xl md:text-5xl font-semibold text-center">
-            Welcome to the Webdev
+            Welcome to the Web Developer
             <span class={" " + styles.accentColor}>Roadmap</span>
         </h1>
 

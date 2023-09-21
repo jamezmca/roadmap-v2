@@ -1,8 +1,9 @@
 <script>
-    import store from "../../../store";
+    import store from "../store";
     import { page } from "$app/stores";
     import { onMount } from "svelte";
-    const roadmapItem = $page.params.chapter;
+    // const roadmapItem = $page.params.chapter;
+    export let roadmapItem;
 
     let styles;
 

@@ -103,7 +103,7 @@
 </script>
 
 <footer
-    class="py-10 sm:py-14 md:py-20 flex flex-col gap-8 sm:gap-10 md:gap-14 items-center justify-center p-4 text-sm"
+    class="py-14 md:py-20 flex flex-col gap-10 md:gap-14 items-center justify-center p-4 text-sm"
 >
     {#if $store.name}
         <div class="flex flex-col gap-4">
@@ -114,7 +114,7 @@
                         on:click={handleRating}
                         on:mouseenter={() => (rating = ratingNum)}
                         on:mouseleave={() => (rating = null)}
-                        class={"grid place-items-center text-3xl px-2 " +
+                        class={"grid place-items-center text-2xl sm:text-3xl px-1.5 sm:px-2 " +
                             styles.starColor(ratingNum)}
                     >
                         <i class="fa-solid fa-star" />
@@ -126,7 +126,7 @@
 
     <div class="flex flex-col gap-4">
         <h4 class="text-center">
-            Interested in a <span class="text-blue-400">Web Dev</span> course - join
+            Interested in a <span class="text-blue-400">Web Development</span> course - join
             the mailing list!
         </h4>
         <div
@@ -165,7 +165,7 @@
     <div class="flex flex-col gap-4 text-center">
         <h4 class="">Join the Guild</h4>
 
-        <div class="flex gap-4 items-center flex-wrap justify-center text-3xl">
+        <div class="flex gap-4 items-center flex-wrap justify-center text-2xl sm:text-3xl">
             <a
                 href={"https://github.com/jamezmca"}
                 target="_blank"
@@ -196,7 +196,7 @@
             </a>
         </div>
     </div>
-    <div class="flex flex-row items-center gap-2">
+    <div class="flex flex-row items-center gap-2 text-sx sm:text-sm ">
         <a
             href="https://www.smoljames.com"
             class="flex items-center gap-2"
