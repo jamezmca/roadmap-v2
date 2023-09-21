@@ -159,8 +159,12 @@
             </button>
         </div>
     </div>
-    <div class="flex flex-col gap-4">
-        <h4 class="text-center">Join the Guild</h4>
+    <!-- <div class="flex flex-col gap-4">
+        <h4 class="text-center">The brand new Smoljames Store </h4>
+    </div> -->
+    <div class="flex flex-col gap-4 text-center">
+        <h4 class="">Join the Guild</h4>
+
         <div class="flex gap-4 items-center flex-wrap justify-center text-3xl">
             <a
                 href={"https://github.com/jamezmca"}
@@ -192,12 +196,25 @@
             </a>
         </div>
     </div>
-    <a
-        href="https://www.smoljames.com"
-        class="flex items-center gap-2"
-        target="_blank"
-    >
-        <i class="fa-solid fa-house" />
-        <h4>Back to <span class="text-blue-400">Smoljames.com</span></h4>
-    </a>
+    <div class="flex flex-row items-center gap-2">
+        <a
+            href="https://www.smoljames.com"
+            class="flex items-center gap-2"
+            target="_blank"
+        >
+            <i class="fa-solid fa-house" />
+            <h4><span class="text-blue-400">Smoljames Hub</span></h4>
+        </a>
+        <p class="">|</p>
+        <a
+            href="https://www.smoljames.com"
+            class="flex items-center gap-2"
+            target="_blank"
+        >
+            <h4>
+                <span class="text-blue-400"> Smoljames Store</span>
+            </h4>
+            <i class="fa-solid fa-store" />
+        </a>
+    </div>
 </footer>

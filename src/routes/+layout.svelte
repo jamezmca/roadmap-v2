@@ -93,20 +93,31 @@
     <Header />
     <slot />
     <Footer />
-    <div
-        class={"w-full max-w-[1000px] fixed bottom-4 pr-4 z-50 flex items-center justify-end right-1/2 translate-x-1/2 duration-200 " +
+
+    <button
+        on:click={goTop}
+        class={"grid place-items-center w-8 sm:w-10 duration-200 z-[10] fixed bottom-4 right-4 aspect-square rounded-full " +
             (y === 0
-                ? " pointer-events-none opacity-0"
-                : " opacity-100 cursor-pointer")}
+                ? " pointer-events-none opacity-0 "
+                : " opacity-100 cursor-pointer ") +
+            styles.arrowColors}
+    >
+        <i class="fa-solid fa-arrow-up" />
+    </button>
+    <!-- <div
+        class={"w-full max-w-[1000px] pointer-events-none fixed bottom-4 pr-4 z-50 flex items-center justify-end right-1/2 translate-x-1/2 duration-200 "}
     >
         <button
             on:click={goTop}
             class={"grid place-items-center w-8 sm:w-10 aspect-square rounded-full " +
+                (y === 0
+                    ? " pointer-events-none opacity-0 "
+                    : " opacity-100 cursor-pointer ") +
                 styles.arrowColors}
         >
             <i class="fa-solid fa-arrow-up" />
         </button>
-    </div>
+    </div> -->
 </div>
 
 <svelte:window bind:scrollY={y} />

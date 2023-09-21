@@ -42,7 +42,7 @@
 </script>
 
 <section
-    class="border-b border-solid border-slate-400 p-4 flex items-center justify-center text-center"
+    class="border-b border-solid border-slate-400 text-xs sm:text-sm  p-4 flex items-center justify-center text-center"
 >
     <a
         class=""
@@ -55,7 +55,8 @@
         </h4>
     </a>
 </section>
-<header class=" flex items-center justify-between p-4 gap-2">
+<header class=" flex items-center justify-between p-4 gap-2 relative">
+   
     <a href="/" class="flex flex-col text-center">
         <div class="flex items-center gap-2">
             <img
@@ -63,20 +64,24 @@
                 src="/pc.png"
                 alt="logo_img"
             />
-            <h1 class="font-medium">
-                Webdev <span class={"poppins " + styles.accentColor}
+            <div class="flex flex-col gap-1">
+
+                <h1 class="font-medium ">
+                    Webdev <span class={"poppins " + styles.accentColor}
                     >Roadmap</span
-                >
-            </h1>
+                    >
+                </h1>
+              
+            </div>
         </div>
         <!-- <h3 class={"text-xs sm:text-sm italic" + fadedColor}>Guide by Smoljames</h3> -->
     </a>
     <div
-        class="flex items-center gap-2 sm:gap-4 text-base sm:text-lg md:text-xl"
+        class="flex items-center gap-3 sm:gap-5 md:gap-6 text-base sm:text-lg md:text-xl"
     >
         <button
             on:click={toggleTheme}
-            class={"grid place-items-center w-8 sm:w-10 aspect-square rounded-md  duration-200 hover:opacity-60"}
+            class={"grid place-items-center  duration-200 hover:opacity-60"}
         >
             {#if $store.darkTheme}
                 <i class={"fa-regular fa-sun "} />
@@ -94,8 +99,33 @@
         >
             <i class="fa-brands fa-discord" />
         </a>
-        <div
-            class={"grid place-items-center w-8 sm:w-10  aspect-square rounded-md duration-200 relative group "}
+        <a
+            href="https://store.smoljames.com"
+            target="_blank"
+            class="duration-200 hover:opacity-60"
+        >
+        <i class="fa-solid fa-store"></i>
+        </a>
+        <!-- <div class="flex items-stretch gap-1 relative">
+            <h6 class="text-xs z-1 ">Prog<br/>ress</h6>
+            <div class={"relative  w-2  my-0.5 " + styles.progressBarColor}>
+                <div
+                    class="w-full absolute bottom-0 left-0 bg-emerald-400"
+                    style={`height: ${(count * 100) / 20}%;`}
+                />
+            </div>
+        </div> -->
+        <div class="flex items-centerrelative">
+     
+            <div class={"relative h-6 sm:h-7 w-2 " + styles.progressBarColor}>
+                <div
+                    class="w-full absolute bottom-0 left-0 bg-emerald-400"
+                    style={`height: ${(count * 100) / 22}%;`}
+                />
+            </div>
+        </div>
+        <!-- <div
+            class={"grid place-items-center duration-200 relative group "}
         >
             <i
                 class="fa-regular fa-user duration-200 group-hover:opacity-60 cursor-pointer"
@@ -130,13 +160,20 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <a
             href="/blog"
-            class={"  border duration-200 border-solid hover:opacity-60 rounded px-3 sm:px-4 py-1.5 md:px-5 text-sm sm:text-base poppins flex items-center gap-2 "}
+            class={"  rounded border px-2 py-1 duration-200  hover:opacity-60 sm:mr-2 text-sm sm:text-base poppins flex items-center gap-2 "}
         >
             <!-- <i class="fa-solid fa-scroll hidden sm:inline"></i> -->
             <h4>Blog</h4>
         </a>
+        <!-- <a
+            href="/blog"
+            class={"  border duration-200 border-solid hover:opacity-60 rounded px-3 sm:px-4 py-1.5 md:px-5 text-sm sm:text-base poppins flex items-center gap-2 "}
+        >
+            <i class="fa-solid fa-scroll hidden sm:inline"></i>
+            <h4>Blog</h4>
+        </a> -->
     </div>
 </header>
