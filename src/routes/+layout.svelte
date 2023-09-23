@@ -85,11 +85,17 @@
 </script>
 
 <div
-    class={"bodyContainer min-h-screen flex flex-col relative bg-gradient-to-r duration-200 text-sm sm:text-base " +
+    class={"bodyContainer min-h-screen flex flex-col relative  duration-200 text-sm sm:text-base " +
         ($store.darkTheme
             ? " from-slate-950 to-slate-800 text-white "
             : " from-blue-50 to-white text-slate-700")}
 >
+    <div
+        class={"fixed top-0 left-0 w-full h-full z-[-1] bg-gradient-to-b " +
+            ($store.darkTheme
+                ? " from-slate-950 to-slate-900  "
+                : " from-blue-50 to-white ")}
+    />
     <Header />
     <slot />
     <Footer />
