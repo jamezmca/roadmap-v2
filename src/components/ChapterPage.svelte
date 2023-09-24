@@ -75,7 +75,7 @@
                 <img
                     src={$store.roadmap[roadmapItem].milestones[milestone]
                         .imgUrl}
-                    alt="video thumbnail"
+                    alt={`${milestone} thumbnail`}
                     class="w-full h-full object-cover duration-200 img opacity-0"
                 />
             </div>
