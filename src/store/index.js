@@ -6,7 +6,7 @@ import { browser } from '$app/environment';
 export const defaultObj = {
     darkTheme: true,
     name: '',
-    version: '1.0.2',
+    version: '1.0.3',
     roadmap: {
         'HTML | CSS | GIT': {
             description: 'HTML, CSS & GIT are at the foundation of most web development projects - so it\'s the perfect place to start.',
@@ -169,7 +169,7 @@ export const defaultObj = {
             milestones: {
                 'Node.js & Express.js Crash Course': {
                     url: 'https://youtu.be/V8ePZHOjRQo',
-                    imgUrl: 'https://i.imgur.com/67MYdDZ.jpg',
+                    imgUrl: 'https://i.imgur.com/VTpzeX7.jpg',
                     imgUrlSm: 'node_crash_course.jpg',
                     iconUrl: 'https://pluralsight2.imgix.net/paths/images/nodejs-45adbe594d.png',
                     iconUrlSm: 'node_logo.jpg',
@@ -179,7 +179,7 @@ export const defaultObj = {
                 },
                 'Monetise an API with Stripe Node.js & Firebase': {
                     url: 'https://youtu.be/Wy9aOFcpr0w',
-                    imgUrl: 'https://i.imgur.com/H4kP0tl.jpg',
+                    imgUrl: 'https://i.imgur.com/MAcDvy2.jpg',
                     imgUrlSm: 'moneyApi.jpg',
                     iconUrl: 'https://pluralsight2.imgix.net/paths/images/nodejs-45adbe594d.png',
                     iconUrlSm: 'node_logo.jpg',
@@ -189,7 +189,7 @@ export const defaultObj = {
                 },
                 'Dockerized Node.js & PostgreSQL Tutorial': {
                     url: 'https://youtu.be/sDPw2Yp4JwE',
-                    imgUrl: 'https://i.imgur.com/DaDO7s6.jpg',
+                    imgUrl: 'https://i.imgur.com/zv6Lk5d.jpg',
                     imgUrlSm: 'docker_app.jpg',
                     iconUrl: 'https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png',
                     iconUrlSm: 'docker_logo.jpg',

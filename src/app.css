@@ -8,13 +8,13 @@ html {
 
 h1,
 h2,
-h3 {
+h3, .poppins {
     font-family: 'Poppins', sans-serif;
 }
 
 h4,
 h5,
-h6 {
+h6, .jetbrains {
     font-family: 'JetBrains Mono', monospace;
 }
 

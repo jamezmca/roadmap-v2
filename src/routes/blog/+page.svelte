@@ -1,6 +1,6 @@
 <script>
     import BackHome from "../../components/BackHome.svelte";
-import store from "../../store";
+    import store from "../../store";
 
     let styles;
 
@@ -18,10 +18,16 @@ import store from "../../store";
 
     let blogs = [
         {
-            name: "How I learned to Code in 6 Months & Got a Full Stack Developer Job Offer (self-taught)",
+            name: "Everything you need to know to Land Your Developer Job! (A comprehensive guide).",
+            description:
+                "Want to land you very own developer job? Guarantee your success by following this comprehensive step-by-step guide that teaches everything you need to know about preparing your professional image, mastering the art of networking, winning in interviews, and getting your job offer.",
+            href: "/blog/job_applications",
+        },
+        {
+            name: "How I learned to Code in 6 Months & Got a Full Stack Developer Job Offer (self-taught).",
             description:
                 "It took a lot of courage to quit my job and pursue a career as a developer, but I knew it was what I wanted and was willing to put in the hard work to make it happen. So this is the story of how I learned to code (self-taught) and ultimately landed my dream remote developer job!",
-            href: "/blog/learn to code",
+            href: "/blog/learn_to_code",
         },
     ];
 </script>
@@ -55,9 +61,13 @@ import store from "../../store";
             </a>
         {/each}
     </div>
-    <BackHome/>
+    <BackHome />
 </section>
 
 <svelte:head>
     <title>Web Developer Roadmap · Blog</title>
+    <meta
+        name="description"
+        content="Everything you need to know about the Web Development Roadmap and landing a developer job."
+    />
 </svelte:head>

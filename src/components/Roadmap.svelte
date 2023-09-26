@@ -60,11 +60,11 @@
         ($store.name ? " flex" : " hidden")}
 >
     <div class="flex flex-col gap-2 py-10 sm:py-14 md:py-16 -mt-4 sm:-mt-0">
-        <h1 class="text-3xl sm:text-4xl md:text-5xl font-semibold">
+        <h5 class="text-3xl poppins sm:text-4xl md:text-5xl font-semibold">
             Welcome <span class={"poppins capitalize text-blue-400"}
                 >{$store.name}</span
             >
-        </h1>
+        </h5>
         <!-- <h4 class="text-center">Continue your coding journey!</h4> -->
         <h4 class=" text-center">
             <span class={" " + styles.amberText}>Learn</span> to code ·
@@ -81,7 +81,8 @@
         {#each Object.keys($store.roadmap) as roadmapItem, itemIndex}
             <button
                 on:click={() =>
-                    (window.location.href = "/chapter/" + roadmapItem.toLowerCase())}
+                    (window.location.href =
+                        "/chapter/" + roadmapItem.toLowerCase())}
                 class={"relative group before:absolute before:top-0 before:left-0  before:border-t-[1.5px] before:border-l-[1.5px]  text-center before:duration-200 after:absolute after:bottom-0 after:right-0  after:border-b-[1.5px] after:border-r-[1.5px]  after:duration-200 flex flex-col  " +
                     styles.borderColor +
                     " " +
@@ -165,7 +166,7 @@
                 {/if}
             </button>
         {/each}
-        <a href={"/job_applications"} class="flex p-0.5 mx-auto relative mt-14">
+        <a href={"/blog/job_applications"} class="flex p-0.5 mx-auto relative mt-14">
             <div
                 class="absolute inset-0 overflow-hidden rounded-md flex items-center justify-center"
             >

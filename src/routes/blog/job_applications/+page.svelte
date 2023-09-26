@@ -1,7 +1,7 @@
 <script>
-    import JobAppSection from "../../components/JobAppSection.svelte";
-    import CheckListItem from "../../components/CheckListItem.svelte";
-    import BackHome from "../../components/BackHome.svelte";
+    import JobAppSection from "../../../components/JobAppSection.svelte";
+    import CheckListItem from "../../../components/CheckListItem.svelte";
+    import BackHome from "../../../components/BackHome.svelte";
 
     const navItems = [
         "Preparation",
@@ -562,5 +562,27 @@
             you’ll never look back.
         </p>
     </JobAppSection>
-   <BackHome/>
+    <BackHome />
 </main>
+
+<svelte:head>
+    <title>Web Developer Roadmap · Blog · Land a Developer Job</title>
+    <meta
+        name="description"
+        content="Land your developer job with this comprehensive, step-by-step guide."
+    />
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": "Guide to Landing a Developer Job",
+          "datePublished": "2023-07-15T08:00:00+08:00",
+          "dateModified": "2023-09-05T09:20:00+08:00",
+          "author": [{
+              "@type": "Person",
+              "name": "James McArthur",
+              "url": "https://www.smoljames.com"
+            },]
+        }
+    </script>
+</svelte:head>

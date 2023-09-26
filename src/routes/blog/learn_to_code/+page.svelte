@@ -431,5 +431,25 @@
 </main>
 
 <svelte:head>
-    <title>Webdev Roadmap · Blog · Learn to code</title>
+    <title
+        >Web Developer Roadmap · Blog · How I Self-taught Coding and Got a Job</title
+    >
+    <meta
+        name="description"
+        content="I taught myself to code and landed a developer job in 6 months! For Free! Here's how I did it."
+    />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "How I learned to code and landed a developer job in 6 months!",
+      "datePublished": "2022-07-15T08:00:00+08:00",
+      "dateModified": "2022-09-05T09:20:00+08:00",
+      "author": [{
+          "@type": "Person",
+          "name": "James McArthur",
+          "url": "https://www.smoljames.com"
+        },]
+    }
+    </script>
 </svelte:head>

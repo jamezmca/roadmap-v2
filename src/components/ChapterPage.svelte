@@ -41,11 +41,11 @@
         class="py-4 sm:p-6 md:py-10 flex items-center justify-center flex-col gap-2"
     >
         <p>Current Objective</p>
-        <h4
-            class="text-blue-400 text-center font-semibold text-2xl sm:text-3xl md:text-4xl"
+        <h2
+            class="text-blue-400 jetbrains text-center font-semibold text-2xl sm:text-3xl md:text-4xl"
         >
             {roadmapItem}
-        </h4>
+        </h2>
     </div>
     {#each Object.keys($store.roadmap[roadmapItem].milestones) as milestone, mileStoneIndex}
         <a
