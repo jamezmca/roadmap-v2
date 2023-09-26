@@ -582,7 +582,7 @@
               "@type": "Person",
               "name": "James McArthur",
               "url": "https://www.smoljames.com"
-            },]
+            }]
         }
     </script>
 </svelte:head>
