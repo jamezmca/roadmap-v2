@@ -18,6 +18,12 @@
             subTextColor: darkTheme ? " text-slate-300" : " text-slate-600",
             blueText: darkTheme ? " text-blue-400" : " text-blue-500",
             amberText: darkTheme ? " text-amber-400" : " text-amber-500",
+            announcementBtn: darkTheme
+                ? " text-slate-950 bg-white "
+                : " text-white bg-slate-950",
+            announcementBorder: darkTheme
+                ? " border-white "
+                : " border-slate-950",
         };
     }
 
@@ -59,6 +65,33 @@
     class={" flex-col justify-center items-center flex-1 w-[800px] max-w-full mx-auto " +
         ($store.name ? " flex" : " hidden")}
 >
+    <div
+        class="flex flex-col items-center sm:flex-row text-center gap-2 sm:gap-4 pt-4 pb-2 sm:pb-0 sm:-mb-4"
+    >
+        <h4
+            class={"border-t border-b hidden sm:inline border-solid " +
+                styles.announcementBorder}
+        >
+            ANNOUNCEMENT
+        </h4>
+        <p>Get your <b>project reviewed</b> in a <b>YouTube</b> video!</p>
+        <div class="flex items-center gap-3">
+            <h4
+                class={"border-t border-b sm:hidden border-solid " +
+                    styles.announcementBorder}
+            >
+                ANNOUNCEMENT
+            </h4>
+
+            <a
+                href="https://discord.gg/qYcez2DW"
+                target="_blank"
+                class={" duration-200 hover:opacity-90 rounded-full px-2 py-0.5" +
+                    styles.announcementBtn}
+                >post your link &rarr;
+            </a>
+        </div>
+    </div>
     <div class="flex flex-col gap-2 py-10 sm:py-14 md:py-16 -mt-4 sm:-mt-0">
         <h5 class="text-3xl poppins sm:text-4xl md:text-5xl font-semibold">
             Welcome <span class={"poppins capitalize text-blue-400"}
@@ -166,7 +199,10 @@
                 {/if}
             </button>
         {/each}
-        <a href={"/blog/job_applications"} class="flex p-0.5 mx-auto relative mt-14">
+        <a
+            href={"/blog/job_applications"}
+            class="flex p-0.5 mx-auto relative mt-14"
+        >
             <div
                 class="absolute inset-0 overflow-hidden rounded-md flex items-center justify-center"
             >

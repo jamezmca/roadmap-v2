@@ -6,20 +6,20 @@ import { browser } from '$app/environment';
 export const defaultObj = {
     darkTheme: true,
     name: '',
-    version: '1.0.3',
+    version: '1.0.4',
     roadmap: {
         'HTML | CSS | GIT': {
             description: 'HTML, CSS & GIT are at the foundation of most web development projects - so it\'s the perfect place to start.',
             milestones: {
-                'FreeCodeCamp - Responsive Web Design': {
-                    url: 'https://www.freecodecamp.org/learn/2022/responsive-web-design/',
-                    imgUrl: 'https://i.imgur.com/X1tCiiM.png',
-                    imgUrlSm: 'fcc_-_rwd.jpg',
-                    iconUrl: 'https://design-style-guide.freecodecamp.org/downloads/fcc_primary_small.jpg',
-                    iconUrlSm: 'fcc_logo.jpg',
+                'HTML & CSS Full Course - Zero to Hero': {
+                    url: 'https://www.youtube.com/watch?v=70T2GMDKl6M',
+                    imgUrl: 'https://i.imgur.com/vbnTbrF.jpg',
+                    imgUrlSm: 'html_css_full_course.jpg',
+                    iconUrl: 'https://i.imgur.com/GVcwsY0.png',
+                    iconUrlSm: 'html_logo.jpg',
                     complete: false,
                     primary: true,
-                    description: 'Start your journey where I started mine! FreeCodeCamp.org have the ultimate interactive certificate to take your HTML & CSS skills from zero to hero.'
+                    description: 'Time to learn HTML & CSS! There\'s no prior programming knowledge required for this course on Responsive Web Design with HTML & CSS. At the end, you will be able to program your own professional and responsive websites and have them live on the internet.'
                 },
                 'GIT Crash Course': {
                     url: 'https://www.youtube.com/watch?v=WqWZt5gi-jw&t=6s',
@@ -30,6 +30,16 @@ export const defaultObj = {
                     complete: false,
                     primary: true,
                     description: 'GIT is the version control technology used by the vast majority of developers; a truly essential skill.'
+                },
+                'FreeCodeCamp - Responsive Web Design': {
+                    url: 'https://www.freecodecamp.org/learn/2022/responsive-web-design/',
+                    imgUrl: 'https://i.imgur.com/X1tCiiM.png',
+                    imgUrlSm: 'fcc_-_rwd.jpg',
+                    iconUrl: 'https://design-style-guide.freecodecamp.org/downloads/fcc_primary_small.jpg',
+                    iconUrlSm: 'fcc_logo.jpg',
+                    complete: false,
+                    primary: false,
+                    description: 'Start your journey where I started mine! FreeCodeCamp.org have the ultimate interactive certificate to take your HTML & CSS skills from zero to hero.'
                 },
                 'The Odin Project': {
                     url: 'https://www.theodinproject.com/paths/foundations/courses/foundations',
