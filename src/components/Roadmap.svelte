@@ -86,9 +86,9 @@
             <a
                 href="https://discord.gg/qYcez2DW"
                 target="_blank"
-                class={" duration-200 hover:opacity-90 rounded-full px-2 py-0.5" +
+                class={" duration-200 hover:opacity-90 rounded-full px-2 py-1 sm:px-3 sm:py-1.5 text-sm" +
                     styles.announcementBtn}
-                >post your link &rarr;
+                >Post your link &rarr;
             </a>
         </div>
     </div>
