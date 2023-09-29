@@ -126,10 +126,16 @@
 
     <div class="flex flex-col gap-4">
         <h4 class="text-center">
-            Interested in a <span class="text-blue-400">Web Development</span> course - join
-            the mailing list!
+            Interested in a <span class="text-blue-400">Web Development</span> course
+            - join the mailing list!
         </h4>
-        <div
+        <a
+            href="https://smoljamesnewsletter.beehiiv.com/subscribe"
+            target="_blank"
+            class="mx-auto p-2 px-4 hover:border-blue-600 duration-200 rounded-md border border-blue-400"
+            ><h4>Subscribe here &rarr;</h4></a
+        >
+        <!-- <div
             class={"flex mx-auto w-full max-w-96 border border-solid  duration-200 rounded overflow-hidden " +
                 styles.inputColor}
         >
@@ -157,7 +163,7 @@
                     </div>
                 {/if}
             </button>
-        </div>
+        </div> -->
     </div>
     <!-- <div class="flex flex-col gap-4">
         <h4 class="text-center">The brand new Smoljames Store </h4>
@@ -165,7 +171,9 @@
     <div class="flex flex-col gap-4 text-center">
         <h4 class="">Join the Guild</h4>
 
-        <div class="flex gap-4 items-center flex-wrap justify-center text-2xl sm:text-3xl">
+        <div
+            class="flex gap-4 items-center flex-wrap justify-center text-2xl sm:text-3xl"
+        >
             <a
                 href={"https://github.com/jamezmca"}
                 target="_blank"
@@ -196,7 +204,7 @@
             </a>
         </div>
     </div>
-    <div class="flex flex-row items-center gap-2 text-sx sm:text-sm ">
+    <div class="flex flex-row items-center gap-2 text-sx sm:text-sm">
         <a
             href="https://www.smoljames.com"
             class="flex items-center gap-2"
