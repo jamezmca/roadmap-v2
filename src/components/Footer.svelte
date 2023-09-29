@@ -130,7 +130,7 @@
             - join the mailing list!
         </h4>
         <a
-            href="https://smoljamesnewsletter.beehiiv.com/subscribe"
+            href="https://smoljames.beehiiv.com/subscribe"
             target="_blank"
             class="mx-auto p-2 px-4 hover:border-blue-600 duration-200 rounded-md border border-blue-400"
             ><h4>Subscribe here &rarr;</h4></a
