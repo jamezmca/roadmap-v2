@@ -74,7 +74,9 @@
         >
             ANNOUNCEMENT
         </h4>
-        <p>Get your <b>project reviewed</b> in a <b>YouTube</b> video!</p>
+        <p>
+            To <b class="italic">accelerate</b> your progress, start the <b>CODE//54</b> challenge today!
+        </p>
         <div class="flex items-center gap-3">
             <h4
                 class={"border-t border-b sm:hidden border-solid " +
@@ -84,11 +86,11 @@
             </h4>
 
             <a
-                href="https://discord.gg/qYcez2DW"
+                href="https://code54.smoljames.com"
                 target="_blank"
                 class={" duration-200 hover:opacity-90 rounded-full px-2 py-1 sm:px-3 sm:py-1.5 text-sm" +
                     styles.announcementBtn}
-                >Post your link &rarr;
+                >Start now &rarr;
             </a>
         </div>
     </div>
