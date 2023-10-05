@@ -52,10 +52,6 @@ p {
     }
 }
 
-.blueShadow {
-    box-shadow: 0 0 4px 1px #60a5fa;
-}
-
 .blur-load {
     background-size: cover;
     background-position: center;
@@ -65,3 +61,9 @@ p {
     object-position: center;
     object-fit: cover;
 }
+
+
+.blueShadow {
+    box-shadow: 0 0 4px 1px #60a5fa;
+}
+
